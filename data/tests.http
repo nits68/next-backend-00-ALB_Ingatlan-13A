@@ -7,12 +7,12 @@ content-type: application/json
 # Request body tartalma: (A következő üres sort ne törölje ki!) 
 
 {
-   "id": 99,
+   "id": 200,
    "kategoria_id": 2,
    "leiras": "Eladó ...", 
-   "hirdetesDatuma": "2022-03-19", 
-   "tehermentes": true,
+   "hirdetesDatuma": "2022-03-19",
    "ar": 45000000,
+   "tehermentes": true,
    "kepUrl": "https://pictures.com/apartman.jpg"
 }
 
