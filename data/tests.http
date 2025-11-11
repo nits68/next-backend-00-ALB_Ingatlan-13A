@@ -17,9 +17,7 @@ content-type: application/json
 }
 
 ### 8. feladat: Egy ingatlan törlése id alapján
-DELETE http://localhost:3000/api/ingatlan/99
+DELETE http://localhost:3000/api/ingatlan/1
 
-### Teszt
-GET http://localhost:3000/alma
 
 
