@@ -27,15 +27,12 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const újIngatlan = await prisma.ingatlan.create({
-      data: {
-        ...body,
-        hirdetesDatuma: body.hirdetesDatuma || Date().toString(),
-      },
+      data: body,
     });
     return NextResponse.json({ id: újIngatlan.id }, { status: 201 });
   } catch (error) {
     if (error instanceof Error && error.message.includes("is missing")) {
-      return NextResponse.json({ message: "Hiányos adatok!" }, { status: 400 });
+      return NextResponse.json({ message: "Hiányos adatok." }, { status: 400 });
     }
     return NextResponse.json(
       {

@@ -10,7 +10,7 @@ datasource db {
 model Ingatlan {
   id             Int        @id @map("_id")
   ar             Int
-  hirdetesDatuma String?
+  hirdetesDatuma DateTime   @default(now()) @db.Date
   kategoria_id   Int
   kepUrl         String?
   leiras         String?

@@ -7,14 +7,19 @@ content-type: application/json
 # Request body tartalma: (A következő üres sort ne törölje ki!) 
 
 {
-   "id": 200,
+   "id": 301,
    "kategoria_id": 2,
    "leiras": "Eladó ...", 
-   "hirdetesDatuma": "2022-03-19",
    "ar": 45000000,
+   "hirdetesDatuma": "2025-12-24T00:00:00.000Z",
    "tehermentes": true,
    "kepUrl": "https://pictures.com/apartman.jpg"
 }
 
 ### 8. feladat: Egy ingatlan törlése id alapján
 DELETE http://localhost:3000/api/ingatlan/99
+
+### Teszt
+GET http://localhost:3000/alma
+
+
